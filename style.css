@@ -482,6 +482,12 @@ nav.scrolled {
     transform: rotate(45deg) translate(20%, 20%);
 }
 
+/* Change opacity from 0 to 1 in these sections */
+.hero-badge, .hero-title, .hero-desc, .btn-group, .hero-img-wrap {
+    opacity: 1; /* Change this from 0 */
+    transform: translateY(0); /* Change this from 30px */
+}
+
 /* Responsiveness */
 
 @media (max-width:968px) {
