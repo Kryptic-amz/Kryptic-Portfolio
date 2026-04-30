@@ -3,7 +3,7 @@
     --bg: #050505;
     --surface: #0a0a0a;
     --surface-2: #141414;
-    --primary: #FF0033;
+    --primary: #FF0066;
     --primary-glow: rgba(255, 0, 51, 0.5);
     --text: #FFFFFF;
     --text-muted: #888888;
@@ -22,8 +22,8 @@
     --surface-2: #E5E5E5;
     --text: #111111;
     --text-muted: #555555;
-    --border: (0, 0, 0, 0.1);
-    --nav-glass: (255, 255, 255, 0.85);
+    --border: rgba(0, 0, 0, 0.1);
+    --nav-glass: rgba(255, 255, 255, 0.85);
 
 }
 
@@ -76,7 +76,7 @@ img {
 
 /* Navigation */
 
-nav {
+.nav {
 
     position: fixed;
     top: 0;
@@ -88,7 +88,7 @@ nav {
 }
 
 
-nav.scrolled {
+.nav.scrolled {
 
     background: var(--nav-glass);
     backdrop-filter: blur(10px);
@@ -100,7 +100,6 @@ nav.scrolled {
 .nav-inner {
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -109,12 +108,25 @@ nav.scrolled {
     font-family: var(--font-head);
     font-weight: 700;
     font-size: 1.5rem;
+    margin-right: 3rem;
+}
+
+.logo span{
+  color: var(--primary);
+  padding-left: 5px;
 }
 
 .nav-links {
 
     display: flex;
     gap: 2rem;
+    margin-right: auto;
+}
+
+.nav-utils {
+    display: flex; 
+    gap: 1.5rem; 
+    align-items: center;
 }
 
 .nav-link {
@@ -239,8 +251,9 @@ nav.scrolled {
 
 .theme-toggle:hover {
 
-    transform: rotate(30deg);
+    transform: rotate(-30deg);
     color: var(--primary);
+    transition: 0.3s;
 }
 
 /* Hero Section*/
@@ -322,6 +335,7 @@ nav.scrolled {
     gap: 1rem;
     opacity: 0;
     transform: translateY(30px);
+    padding-top: 25px;
 }
 
 .btn {

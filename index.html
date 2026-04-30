@@ -6,12 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kryptic Portfolio</title>
+    <link rel="icon" href="kryptic.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts:googleapis.com/css2?family=outfit:wght@300;400;500;600&family=space+grotesk:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=outfit:wght@300;400;500;600&family=space+grotesk:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -21,9 +22,10 @@
     <div class="noise"></div>
 
     <nav id="main-nav">
-        <div class="container nav-inner">
-            <a href="#" class="logo">Kryptic<span>AMZ</span></a>
-        </div>
+    <div class="container nav-inner">
+        <!-- Logo and Links are now 'Neighbors' -->
+        <a href="#" class="logo">Kryptic<span>AMZ</span></a>
+        
         <div class="nav-links">
             <a href="#" class="nav-link">Home</a>
             <a href="#" class="nav-link">About</a>
@@ -31,13 +33,16 @@
             <a href="#" class="nav-link">Gallery</a>
             <a href="#" class="nav-link">Contact</a>
         </div>
-        <div style="display: flex; gap: 1.5rem; align-items: center;">
+
+        <!-- This Div will be pushed to the right -->
+        <div class="nav-utils">
             <div id="theme-toggle" class="theme-toggle">
                 <i class="fa-solid fa-moon"></i>
             </div>
             <div class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></div>
         </div>
-    </nav>
+    </div>
+</nav>
 
 
     <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
@@ -67,7 +72,7 @@
                         Building <span style="color: var(--primary);">Digital</span> Masterpieces.
                     </h1>
                     <p class="hero-disc" id="hero-disc">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, corrupti!
+                        Transforming anime visuals into cinematic experiences through expert mobile editing, backed by three years of professional experience and creative passion.
                     </p>
                     <div class="btn-group" id="hero-buttons">
                         <a href="#" class="btn btn-primary">View Work</a>
